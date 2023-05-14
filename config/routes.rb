@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-  root 'static_page#home'
   devise_for :users
   mount LetterOpenerWeb::Engine, at: "/letter_opener_web" if Rails.env.development?
 
