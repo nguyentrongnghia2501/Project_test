@@ -275,7 +275,6 @@ DEPENDENCIES
   jbuilder
   letter_opener
   letter_opener_web
-  mail
   mysql2 (~> 0.5)
   pry-rails
   puma (~> 5.0)

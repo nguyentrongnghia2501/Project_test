@@ -8,7 +8,6 @@ class PostsController < ApplicationController
   def index
     @posts = Post.where(status: nil).or(Post.where(user_id: current_user.id))
     render json: @posts
-
   end
 
   # GET /posts/1 or /posts/1.json
@@ -27,7 +26,6 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-
     @post = Post.new(post_params)
     respond_to do |format|
       if @post.save
@@ -45,7 +43,6 @@ class PostsController < ApplicationController
         render json: @post, status: :ok, location: @post
       else
         render json: { error: "You don't have permission to edit this post." }, status: :unprocessable_entity
-
       end
     end   
   end 

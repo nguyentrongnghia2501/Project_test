@@ -71,10 +71,9 @@ group :test do
   gem "webdrivers"
 end
 gem "devise"
-gem "mail"
 gem "letter_opener_web"
 gem 'binding_of_caller'
 gem 'pry-rails'
 gem "activestorage"
 gem "rspec-rails"
-gem 'factory_bot_rails'
+gem "factory_bot_rails"
